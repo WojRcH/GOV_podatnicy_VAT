@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="GOV_podatnicy_VAT">
+  <NavigationItems StartupNavigationItem="Entity_ListView" />
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="20.2.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="20.2.6.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

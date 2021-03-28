@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module.Blazor\\GOV_podatnicy_VAT.Module.Blazor.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module.Blazor\\GOV_podatnicy_VAT.Module.Blazor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module.Blazor\\GOV_podatnicy_VAT.Module.Blazor.csproj",
+        "projectName": "GOV_podatnicy_VAT.Module.Blazor",
+        "projectPath": "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module.Blazor\\GOV_podatnicy_VAT.Module.Blazor.csproj",
+        "packagesPath": "C:\\Users\\WojRcH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module.Blazor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\WojRcH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module\\GOV_podatnicy_VAT.Module.csproj": {
+                "projectPath": "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module\\GOV_podatnicy_VAT.Module.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "DevExpress.ExpressApp": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.Blazor": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.FileAttachment.Blazor": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.Validation.Blazor": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.Xpo": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.Persistent.Base": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.Persistent.BaseImpl": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module\\GOV_podatnicy_VAT.Module.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module\\GOV_podatnicy_VAT.Module.csproj",
+        "projectName": "GOV_podatnicy_VAT.Module",
+        "projectPath": "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module\\GOV_podatnicy_VAT.Module.csproj",
+        "packagesPath": "C:\\Users\\WojRcH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\WojRcH\\source\\repos\\GOV_podatnicy_VAT\\GOV_podatnicy_VAT.Module\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\WojRcH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "DevExpress.ExpressApp": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.AuditTrail": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.CloneObject": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.ConditionalAppearance": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.Validation": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.ViewVariantsModule": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.ExpressApp.Xpo": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.Persistent.Base": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            },
+            "DevExpress.Persistent.BaseImpl": {
+              "target": "Package",
+              "version": "[20.2.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

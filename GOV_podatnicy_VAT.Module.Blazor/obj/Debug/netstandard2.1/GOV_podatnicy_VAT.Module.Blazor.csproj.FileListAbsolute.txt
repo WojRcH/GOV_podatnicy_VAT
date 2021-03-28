@@ -1,0 +1,17 @@
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.StaticWebAssets.xml
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.deps.json
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.pdb
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.pdb
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.csprojAssemblyReference.cache
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.AssemblyInfoInputs.cache
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.AssemblyInfo.cs
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.csproj.CoreCompileInputs.cache
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\staticwebassets\GOV_podatnicy_VAT.Module.Blazor.StaticWebAssets.Manifest.cache
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\staticwebassets\GOV_podatnicy_VAT.Module.Blazor.StaticWebAssets.xml
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\scopedcss\bundle\GOV_podatnicy_VAT.Module.Blazor.styles.css
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.RazorTargetAssemblyInfo.cache
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.csproj.CopyComplete
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module.Blazor\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.Blazor.pdb

@@ -1,0 +1,9 @@
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.deps.json
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\bin\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.pdb
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.csprojAssemblyReference.cache
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.AssemblyInfoInputs.cache
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.AssemblyInfo.cs
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.csproj.CoreCompileInputs.cache
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Module\obj\Debug\netstandard2.1\GOV_podatnicy_VAT.Module.pdb
