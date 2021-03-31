@@ -12,6 +12,12 @@ namespace GOV_podatnicy_VAT.Module.BusinessObjects
     public class Entity : BaseObject
     {
         public Entity(Session session) : base(session) { }
+        [Action(Caption = "Set has virtual accounts", TargetObjectsCriteria = "Not [hasVirtualAccounts]")]
+        public void HasVirtualAccountsTrue()
+        {
+            hasVirtualAccounts = true;
+            
+        }
         string name;
         public string Name
         {

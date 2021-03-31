@@ -38,6 +38,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="WykazPodatnikow.Standard" Version="1.2.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GOV_podatnicy_VAT.Module.Blazor\GOV_podatnicy_VAT.Module.Blazor.csproj">

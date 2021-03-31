@@ -30,6 +30,7 @@
     <PackageReference Include="DevExpress.ExpressApp.Xpo" Version="20.2.6" />
     <PackageReference Include="DevExpress.Persistent.Base" Version="20.2.6" />
     <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="20.2.6" />
+    <PackageReference Include="WykazPodatnikow.Standard" Version="1.2.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GOV_podatnicy_VAT.Module\GOV_podatnicy_VAT.Module.csproj">

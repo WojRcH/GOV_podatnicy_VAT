@@ -1,6 +1,8 @@
-﻿<Router AppAssembly="@typeof(Program).Assembly" AdditionalAssemblies="new[] { typeof(DevExpress.ExpressApp.Blazor.BlazorApplication).Assembly }">
+﻿@*@page "/RouteParameter/{text}"*@
+<Router AppAssembly="@typeof(Program).Assembly" AdditionalAssemblies="new[] { typeof(DevExpress.ExpressApp.Blazor.BlazorApplication).Assembly }">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" />
+
     </Found>
     <NotFound>
         <LayoutView>
@@ -8,3 +10,11 @@
         </LayoutView>
     </NotFound>
 </Router>
+<DxTextBox @bind-Text="@TextBoxValue"
+           NullText="Wpisz NIP do wyszukania podatnika"
+           ClearButtonDisplayMode="DataEditorClearButtonDisplayMode.Auto"></DxTextBox>
+
+@code {
+    [Parameter]
+    public string TextBoxValue { get; set; }
+}

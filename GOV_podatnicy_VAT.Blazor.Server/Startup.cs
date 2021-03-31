@@ -51,7 +51,7 @@ namespace GOV_podatnicy_VAT.Blazor.Server {
             app.UseXaf();
             app.UseEndpoints(endpoints => {
                 endpoints.MapBlazorHub();
-                endpoints.MapFallbackToPage("/_Host");
+                endpoints.MapFallbackToPage("/_Host");                
             });
         }
     }

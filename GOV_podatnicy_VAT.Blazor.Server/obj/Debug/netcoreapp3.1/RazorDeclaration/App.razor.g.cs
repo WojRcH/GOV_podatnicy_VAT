@@ -89,6 +89,15 @@ using GOV_podatnicy_VAT.Blazor.Server;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 17 "C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\App.razor"
+       
+    [Parameter]
+    public string TextBoxValue { get; set; }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

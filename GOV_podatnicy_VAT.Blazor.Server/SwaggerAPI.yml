@@ -1,0 +1,447 @@
+openapi: 3.0.0
+info:
+  description: Rejestr Podatników VAT
+  version: "1.0.0"
+  title: API Rejestr WL
+  contact:
+    email: WykazPodatnikow@mf.gov.pl
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+
+#====================================================================================
+paths:
+  /search/nip/{nip}:
+    get:
+      operationId: nip?date
+
+      parameters:
+        - in: path
+          name: nip
+          required: true
+          schema:
+            type: string
+            minLength: 10
+            maxLength: 10
+          description: "Nip"
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+            format: date
+            example: '2019-05-17'
+
+      responses:
+        '200':
+          description: Pojedynczy podmiot, który spełnił warunki wyszukiwania
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+
+        '400':
+          description: niepoprawny parametr na wejściu
+
+      description: Wyszukiwanie pojedynczego podmiotu po nip
+
+
+  /search/regon/{regon}:
+    get:
+      operationId: regon?date
+
+      parameters:
+        - in: path
+          name: regon
+          required: true
+          schema:
+            type: string
+            pattern: '^\d{9}$|^\d{14}$'
+            description: numer identyfikacyjny REGON jeżeli został nadany
+            example: '364760520'
+          description: Regon
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+            format: date
+            example: '2019-05-17'
+
+      responses:
+        '200':
+          description: Pojedynczy podmiot, który spełnił warunki wyszukiwania
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+
+        '400':
+          description: niepoprawny parametr na wejściu
+
+      description: Wyszukiwanie pojedynczego podmiotu po regon
+
+
+  /search/bank-account/{bank-account}:
+    get:
+      operationId: bank-account?date
+
+      parameters:
+        - in: path
+          name: bank-account
+          required: true
+          schema:
+            type: string
+            minLength: 26
+            maxLength: 26
+          description: Numer rachunku bankowego
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+            format: date
+            example: '2019-05-17'
+
+      responses:
+        '200':
+          description: Lista podmiotów, które spełniły warunki wyszukiwania
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityListResponse'
+
+        '400':
+          description: niepoprawny parametr na wejściu
+
+      description: Wyszukiwanie podmiotów po numerze konta
+
+  /check/nip/{nip}/bank-account/{bank-account}:
+    get:
+      operationId: checkNip
+
+      parameters:
+        - in: path
+          name: nip
+          required: true
+          schema:
+            type: string
+            minLength: 10
+            maxLength: 10
+          description: "Nip"
+        - in: path
+          name: bank-account
+          required: true
+          schema:
+            type: string
+            minLength: 26
+            maxLength: 26
+          description: Numer rachunku bankowego
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+            format: date
+            example: '2019-05-17'
+
+      responses:
+        '200':
+          description: Informacja, że dany rachunek jest przypisany do podmiotu
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityCheckResponse'
+
+        '400':
+          description: niepoprawny parametr na wejściu
+
+      description: Sprawdzenie pojedynczego podmiotu po nip i numerze konta
+
+  /check/regon/{regon}/bank-account/{bank-account}:
+    get:
+      operationId: checkRegon
+
+      parameters:
+        - in: path
+          name: regon
+          required: true
+          schema:
+            type: string
+            pattern: '^\d{9}$|^\d{14}$'
+            description: numer identyfikacyjny REGON
+            example: '364760520'
+          description: Regon
+        - in: path
+          name: bank-account
+          required: true
+          schema:
+            type: string
+            minLength: 26
+            maxLength: 26
+          description: Numer rachunku bankowego
+        - in: query
+          name: date
+          required: true
+          schema:
+            type: string
+            format: date
+            example: '2019-05-17'
+
+      responses:
+        '200':
+          description: Informacja, że dany rachunek jest przypisany do podmiotu
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityCheckResponse'
+
+        '400':
+          description: niepoprawny parametr na wejściu
+
+      description: Sprawdzenie pojedynczego podmiotu po regon i numerze konta
+
+      #====================================================================================
+
+components:
+  schemas:
+    EntityRequestBase:
+      properties:
+        data:
+          type: string
+          format: date
+          example: '2019-05-17'
+        bank-account:
+          type: array
+          items:
+            type: string
+            minLength: 26
+            maxLength: 26
+            example: '90249000050247256316596736'
+        nip:
+          type: string
+          minLength: 10
+          maxLength: 10
+          example: '1111111111'
+        regon:
+          type: string
+          pattern: '^\d{9}$|^\d{14}$'
+          description: |
+            numer identyfikacyjny REGON jeżeli został nadany
+          example: '364760520'
+        pesel:
+          type: string
+          description: |
+            numer PESEL jeżeli został nadany
+          minLength: 11
+          maxLength: 11
+          example: '22222222222'
+      required:
+        - data
+
+
+    #====================================================================================
+    Exception:
+      properties:
+        message:
+          type: string
+          example: 'error message'
+        code:
+          type: integer
+      required:
+        - message
+        - code
+
+    #====================================================================================
+    Person:
+      properties:
+        firstName:
+          type: string
+          example: Jan
+        lastName:
+          type: string
+          example: Nowak
+        pesel:
+          $ref: '#/components/schemas/EntityRequestBase/properties/pesel'
+        nip:
+          type: string
+          minLength: 10
+          maxLength: 10
+          example: '1111111111'
+    #====================================================================================
+    EntityPerson:
+      allOf:
+        - $ref: '#/components/schemas/Person'
+        - properties:
+            companyName:
+              type: string
+              example: 'Nazwa firmy'
+    #====================================================================================
+    EntityCheck:
+      properties:
+        accountAssigned:
+          type: string
+          example: TAK
+          description: |
+            Rachunek przypisany do podmiotu
+        requestId:
+          type: string
+          example: 'd2n10-84df1a1'
+    #====================================================================================
+    Entity:
+      allOf:
+
+        - properties:
+            name:
+              type: string
+              example: 'ABC Jan Nowak'
+              description: |
+                Firma (nazwa) lub imię i nazwisko
+            nip:
+              type: string
+              minLength: 10
+              maxLength: 10
+              example: '1111111111'
+            statusVat:
+              type: string
+              enum:
+                - Czynny
+                - Zwolniony
+                - Podmiot niezarejestrowany do VAT
+              example: Zwolniony
+              description: |
+                Status podatnika VAT.
+
+            regon:
+              type: string
+              pattern: '^\d{9}$|^\d{14}$'
+              description: |
+                numer identyfikacyjny REGON jeżeli został nadany
+              example: '364760520'
+            pesel:
+              $ref: '#/components/schemas/EntityRequestBase/properties/pesel'
+            krs:
+              type: string
+              example: '0000636771'
+              maxLength: 10
+              minLength: 10
+              description: |
+                numer KRS jeżeli został nadany
+            residenceAddress:
+              type: string
+              example: 'ul/ Chmielna 85/87 00-805 Warszawa'
+              description: |
+                Adres siedziby
+            workingAddress:
+              type: string
+              description: |
+                Adres stałego miejsca prowadzenia działalności lub adres miejsca zamieszkania w przypadku braku adresu stałego miejsca prowadzenia działalności
+            representatives:
+              type: array
+              items:
+                $ref: '#/components/schemas/Person'
+              description: |
+                Imiona i nazwiska osób wchodzących w skład organu uprawnionego do reprezentowania podmiotu oraz ich numery NIP i/lub PESEL
+            authorizedClerks:
+              type: array
+              items:
+                $ref: '#/components/schemas/Person'
+              description: |
+                Imiona i nazwiska prokurentów oraz ich numery NIP i/lub PESEL
+            partners:
+              type: array
+              items:
+                $ref: '#/components/schemas/EntityPerson'
+              description: |
+                Imiona i nazwiska lub firmę (nazwa) wspólnika oraz jego numeryNIP i/lub PESEL
+
+            registrationLegalDate:
+              type: string
+              format: date
+              example: '2018-02-21'
+              description: |
+                Data rejestracji jako podatnika VAT
+            registrationDenialDate:
+              type: string
+              format: date
+              example: '2019-02-21'
+              description: |
+                Data odmowy rejestracji jako podatnika VAT
+            registrationDenialBasis:
+              type: string
+              example: 'Ustawa o podatku od towarów i usług art. 96'
+              description: |
+                Podstawa prawna odmowy rejestracji
+            restorationDate:
+              type: string
+              format: date
+              example: '2019-02-21'
+              description: |
+                Data przywrócenia jako podatnika VAT
+            restorationBasis:
+              type: string
+              example: 'Ustawa o podatku od towarów i usług art. 96'
+              description: |
+                Podstawa prawna przywrócenia jako podatnika VAT
+            accountNumbers:
+              type: array
+              items:
+                type: string
+                minLength: 26
+                maxLength: 26
+                example: '90249000050247256316596736'
+            hasVirtualAccounts:
+              type: boolean
+              example: true
+              description: |
+                Podmiot posiada maski kont wirtualnych
+
+          required:
+            - name
+    #====================================================================================
+    EntityItem:
+      allOf:
+        - properties:
+            subject:
+              $ref: '#/components/schemas/Entity'
+            requestId:
+              type: string
+              example: 'd2n10-84df1a1'
+    #====================================================================================
+    EntityList:
+      allOf:
+        - properties:
+            subjects:
+              type: array
+              items:
+                $ref: '#/components/schemas/Entity'
+              description: |
+                Lista podmiotów
+            requestId:
+              type: string
+              example: 'd2n10-84df1a1'
+    #====================================================================================
+    EntityResponse:
+      allOf:
+        - properties:
+            exception:
+              $ref: '#/components/schemas/Exception'
+            result:
+              $ref: '#/components/schemas/EntityItem'
+
+    EntityCheckResponse:
+      allOf:
+        - properties:
+            exception:
+              $ref: '#/components/schemas/Exception'
+            result:
+              $ref: '#/components/schemas/EntityCheck'
+
+    EntityListResponse:
+      allOf:
+        - properties:
+            exception:
+              $ref: '#/components/schemas/Exception'
+            result:
+              $ref: '#/components/schemas/EntityList'
+  

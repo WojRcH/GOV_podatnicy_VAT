@@ -133,3 +133,14 @@ C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\b
 C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\Microsoft.PowerBI.Api.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\WykazPodatnikow.Data.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\WykazPodatnikow.SharedLib.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\WykazPodatnikow.Standard.dll
+C:\Users\WojRcH\source\repos\GOV_podatnicy_VAT\GOV_podatnicy_VAT.Blazor.Server\bin\Debug\netcoreapp3.1\GOV_podatnicy_VAT.Module.Blazor.StaticWebAssets.xml

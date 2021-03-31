@@ -77,6 +77,10 @@
             "DevExpress.Persistent.BaseImpl": {
               "target": "Package",
               "version": "[20.2.6, )"
+            },
+            "WykazPodatnikow.Standard": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             }
           },
           "imports": [
@@ -175,6 +179,30 @@
             "DevExpress.Persistent.BaseImpl": {
               "target": "Package",
               "version": "[20.2.6, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.PowerBI.Api": {
+              "target": "Package",
+              "version": "[3.22.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "WykazPodatnikow.Standard": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             }
           },
           "imports": [
